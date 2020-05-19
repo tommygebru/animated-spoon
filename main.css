@@ -2,28 +2,59 @@
 B A S E   S T Y L E S
 ***************************/
 
-*{background:rgba(0,0,0,.1);}
-body{font-family: 'Lora', serif; font-size:1.5rem;}
-h1,h2,h3,h4,h5,h6, a, button, label{font-family: 'Montserrat', sans-serif;}
-button{width: 100px; height: 45px; font-weight: 700; cursor: pointer; letter-spacing: 2px; text-transform: uppercase;}
-legend{font-weight: 700;}
-input{font-size: 1.5rem;}
-form div{margin: 20px;}
-
-
+* {
+	background: rgba(0, 0, 0, .1);
+}
+body {
+	font-family: 'Lora', serif;
+	font-size: 1.5rem;
+}
+h1, h2, h3, h4, h5, h6, a, button, label {
+	font-family: 'Montserrat', sans-serif;
+}
+button {
+	width: 100px;
+	height: 45px;
+	font-weight: 700;
+	cursor: pointer;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+legend {
+	font-weight: 700;
+}
+input {
+	font-size: 1.5rem;
+}
+form div {
+	margin: 20px;
+}
 /***************************
 M A I N   S T Y L E S
 ***************************/
-header{padding-left: 100px;}
-main{width: 80%; margin: 0 auto;}
 
-
+header {
+	padding-left: 100px;
+}
+main {
+	width: 80%;
+	margin: 0 auto;
+}
 /***************************
 M E D I A   Q U E R I E S
 ***************************/
+
 @media only screen and (max-width: 500px) {
-header{padding-left: 0;}
-form div{margin: 5px;}
-main{width: 95%;}
-button{width: 80px;}
+	header {
+		padding-left: 0;
+	}
+	form div {
+		margin: 5px;
+	}
+	main {
+		width: 95%;
+	}
+	button {
+		width: 80px;
+	}
 }
