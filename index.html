@@ -1,39 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Fetch Puppy</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-  <link type="text/css" rel="stylesheet" href="main.css"/>
+	<meta charset="UTF-8">
+	<title>Fetch Puppy</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400;1,500&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header>
-<h1>Fetch Puppy</h1>
-</header>
-<main>
-<section id="randomSection">
-<form>
-  <fieldset>
-    <legend>Display a random dog!</legend>
-<button id="randomButton">Fetch</button>
-
-<article id="randomArticleImage"></article>
-<article id="randomArticleDetails"></article>
-</fieldset>
-</form>
-</section><!--SECTION__randomSelection-->
-<section id="searchSection">
-<form>
-  <fieldset>
-    <legend>Find a dog of your choice!</legend>
-<div><label>Enter a dog breed: </label><input type="text" name="dog-breed" id="dog-search" required></div>
-<div><label>Dogs to display: </label><input type="number" name="dog-amount" id="dog-amount"
-       min="1" max="50" required></div>
-  <button id="searchButton">Fetch</button>
-  <article id="searchArticle"></article>
-</fieldset>
-</form>
-</section><!--SECTION__searchSelection-->
-</main>
+	<header>
+		<h1>Fetch Puppy</h1>
+	</header>
+	<main>
+		<section id="randomSection">
+			<form>
+				<fieldset>
+					<legend>Display a random dog!</legend> <button id="randomButton">Fetch</button>
+					<article id="randomArticleImage"></article>
+					<article id="randomArticleDetails"></article>
+				</fieldset>
+			</form>
+		</section><!--SECTION__randomSelection-->
+		<section id="searchSection">
+			<form>
+				<fieldset>
+					<legend>Find a dog of your choice!</legend>
+					<div>
+						<label>Enter a dog breed:</label> <input id="dog-search" name="dog-breed" required="" type="text">
+					</div>
+					<div>
+						<label>Dogs to display:</label> <input id="dog-amount" max="50" min="1" name="dog-amount" required="" type="number">
+					</div><button id="searchButton">Fetch</button>
+					<article id="searchArticle"></article>
+				</fieldset>
+			</form>
+		</section><!--SECTION__searchSelection-->
+	</main>
 </body>
 </html>
