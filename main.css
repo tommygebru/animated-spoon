@@ -45,14 +45,15 @@ main {
 	width: 80%;
 	margin: 0 auto;
 }
-#searchArticle {
+#randomArticle aside{
 	justify-content: space-around;
 	flex-flow: row wrap;
 }
 img {
-	width: 200px;
-	height: 200px;
-	border: solid 1px #a52a49;
+	width: 250px;
+	height: 250px;
+  border-bottom: inset 10px #681a1a;
+	border-right: inset 10px #a52a49;
 	margin: 30px 20px 0 20px;
 }
 /***************************
@@ -76,4 +77,8 @@ M E D I A   Q U E R I E S
 		width: 300px;
 		height: 300px;
 	}
+  #randomArticle aside{
+  	justify-content: center; align-items: center;
 }
+
+}/**MEDIA QUERY**/
