@@ -15,6 +15,14 @@ $("document").ready(function() {
 		//function
 	}); //event
   function pullDogImages(dogNum) {
-		
+    fetch(`https://dog.ceo/api/breeds/image/random/${Number(dogNum)}`)
+    .then(response => {
+			if (response.ok) {
+				return response.json();
+			} else {
+				throw console.log(response.text());
+			}
+		}).then(responseJson => displayResults(responseJson))
+    .catch(error => displayError(error));
 	} //function
 });//READY
