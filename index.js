@@ -9,6 +9,12 @@ $("document").ready(function() {
 		$("#randomArticle aside").show();
 		$("#randomArticle img").remove();
 		//remove images
-
+    let dogNum = $("#dog-amount").val();
+		$("#dogNum").text(dogNum);
+		pullDogImages(dogNum);
+		//function
 	}); //event
+  function pullDogImages(dogNum) {
+		
+	} //function
 });//READY
