@@ -26,3 +26,18 @@ $("document").ready(function() {
     .catch(error => displayError(error));
 	} //function
 });//READY
+function displayResults(responseJson) {
+	console.log(responseJson);
+	let dogNum = responseJson.message.length;
+	if (dogNum) {
+		for (let i = 0; i < dogNum; i++) {
+			console.log(dogNum, i);
+			$("#randomArticle aside").prepend(`<img src=${responseJson.message[i]} />`);
+		}
+	} else {
+		console.log("check your inputs");
+	}
+}; //function
+function displayError(error) {
+	alert("ERROR 404: Images not found");
+}
