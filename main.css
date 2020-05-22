@@ -15,6 +15,28 @@ body {
 h1, h2, h3, h4, h5, h6, a, button, label, input {
 	font-family: 'Montserrat', sans-serif;
 }
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/***************************
+I N P U T S
+***************************/
+input {
+	font-size: 1.5rem;
+  color: #a52a49;
+  border: 1px solid #681a1a;
+  text-indent: 5px;
+  letter-spacing: 1px;
+}
+input::placeholder{
+  color:inherit;
+  opacity:.6;
+}
+/***************************
+B U T T O N S
+***************************/
 button {
 	width: 100px;
 	height: 45px;
@@ -32,8 +54,12 @@ button:hover {
   color: #f9e8e8;
   background: #681a1a;
 }
-button:focus, input:focus {outline:0;}
-
+button:focus, input:focus {
+  outline:0;
+}
+/***************************
+F O R M S
+***************************/
 legend {
 	font-weight: 700;
   border: 4px inset #2aa8a8;
@@ -41,26 +67,15 @@ legend {
   color: aliceblue;
   padding: 5px;
 }
-fieldset{border: 4px inset #2aa8a8;}
-
-input {
-	font-size: 1.5rem;
-  color: #a52a49;
-  border: 1px solid #681a1a;
+fieldset{
+  border: 4px inset #2aa8a8;
 }
 form div {
 	margin: 20px;
 }
-.flex {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-input{text-indent: 10px; letter-spacing: 1px;}
 /***************************
-M A I N   S T Y L E S
+S E M A N T I C S
 ***************************/
-
 header {
 	padding-left: 100px;
 }
@@ -88,7 +103,6 @@ img {
 /***************************
 M E D I A   Q U E R I E S
 ***************************/
-
 @media only screen and (max-width: 500px) {
 	header {
 		padding-left: 0;
@@ -107,4 +121,4 @@ M E D I A   Q U E R I E S
   	justify-content: center; align-items: center;
 }
 
-}/**MEDIA QUERY**/
+}/***QUERY****/
